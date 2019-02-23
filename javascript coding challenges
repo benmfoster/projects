@@ -1,0 +1,14 @@
+// I don't understand why this doesn't work. Any ideas?
+
+<script>function reverseString(str) {
+  let i = str.length - 1;
+  let reverse_str = [];
+  let str_array = str.split();
+  while (i >= 0) {
+    reverse_str.push(str_array.shift);
+    i --;
+  }
+  return reverse_str.join();
+}
+
+reverseString("hello");
