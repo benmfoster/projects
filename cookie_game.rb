@@ -29,35 +29,9 @@ def game_play
   
   
       # vvvvvvv Add Your "If Statement" Here vvvvvvv
-
-      if input == "w"
-        move_up
-        if moved_to_a_valid_square? == false
-            error_message             
-        end
-      elsif input == "a"
-        move_left
-        if moved_to_a_valid_square? == false
-            error_message             
-        end
-      elsif input == "s"
-        move_down
-        if moved_to_a_valid_square? == false
-            error_message             
-        end
-      elsif input == "d"
-        move_right
-        if moved_to_a_valid_square? == false
-            error_message 
-        end
-      end
-
-      if win?
-        winner = true
-      end
   
         # ONLY WRITE CODE IN THIS SECTION
-  
+
       # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
       reset_screen
     end
@@ -147,4 +121,3 @@ def game_play
   
   # Runner Code to run the game
   game_play
-  
